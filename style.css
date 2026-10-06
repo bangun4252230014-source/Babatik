@@ -1,0 +1,142 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f5f1e8;
+    color: #333;
+}
+
+header {
+    text-align: center;
+    padding: 25px;
+    background: #6b3e26;
+    color: white;
+}
+
+header h1 {
+    margin: 0 0 8px;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding: 30px;
+    max-width: 1000px;
+    margin: auto;
+    align-items: start;
+}
+
+section {
+    background: white;
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+canvas {
+    canvas {
+    display: block;
+    background: white;
+    border: 2px solid #6b3e26;
+    cursor: crosshair;
+    touch-action: none;
+}
+    display: block;
+    background: white;
+    border: 2px solid #6b3e26;
+    cursor: crosshair;
+}
+
+#canvasSketsa,
+#canvasBatik {
+    width: 100%;
+    max-width: 450px;
+    aspect-ratio: 1 / 1;
+    height: auto;
+    .sketsa,
+.hasil {
+    width: 100%;
+}
+
+.hasil {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+}
+
+#canvasBatik {
+    width: 450px;
+    height: 450px;
+}
+
+.kontrol {
+    margin-top: 15px;
+    display: flex;
+    gap: 10px;
+}
+
+button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 6px;
+    background: #6b3e26;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #4d2c1c;
+}
+.kontrol {
+    margin-top: 15px;
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.kontrol label {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.kontrol input[type="color"] {
+    width: 55px;
+    height: 35px;
+    padding: 2px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.kontrol input[type="number"] {
+    width: 70px;
+    padding: 7px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.kontrol input[type="range"] {
+    width: 120px;
+}
+
+.kontrol span {
+    font-size: 12px;
+    font-weight: normal;
+}
+
+.kontrol label {
+    min-width: 100px;
+}
+@media (max-width: 800px) {
+    main {
+        grid-template-columns: 1fr;
+    }
+}

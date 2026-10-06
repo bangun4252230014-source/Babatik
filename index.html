@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Batik Recursive</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Batik Recursive</h1>
+        <p>Buat sketsa sendiri dan kembangkan menjadi pola batik.</p>
+    </header>
+
+    <main>
+
+        <section class="sketsa">
+            <h2>1. Buat Sketsa</h2>
+
+            <canvas id="canvasSketsa"></canvas>
+
+            <div class="kontrol">
+
+    <label>
+        Warna Motif
+        <input type="color" id="warnaMotif" value="#6b3e26">
+    </label>
+
+    <label>
+        Warna Latar
+        <input type="color" id="warnaLatar" value="#f5f1e8">
+    </label>
+
+    <label>
+    Kedalaman Rekursi
+    <input
+        type="number"
+        id="kedalaman"
+        min="0"
+        max="5"
+        value="3"
+    >
+</label>
+
+<label>
+    Skala Motif
+    <input
+        type="range"
+        id="skala"
+        min="30"
+        max="90"
+        value="60"
+    >
+    <span id="nilaiSkala">60%</span>
+</label>
+
+<label>
+    Rotasi
+    <input
+        type="range"
+        id="rotasi"
+        min="0"
+        max="180"
+        value="45"
+    >
+    <span id="nilaiRotasi">45°</span>
+</label>
+
+<label>
+    <input type="checkbox" id="cermin">
+    Cerminkan Motif
+</label>
+
+    <button id="hapus">Hapus Sketsa</button>
+
+    <button id="generate">Generate Batik</button>
+<button id="download">Download Batik</button>
+    </button>
+
+</div>
+        </section>
+
+        <section class="hasil">
+            <h2>2. Hasil Batik</h2>
+
+            <canvas id="canvasBatik"></canvas>
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
